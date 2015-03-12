@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	
+	
+	"name": "My Extension",
+	"description": "This is a sample extension I am building for the 1st time",
+	
+	"version": "1.0",
+	
+	"icons":{
+		"128":"icon.png"
+	},
+	"background": { "scripts": ["popup.js"] },
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Click here!"
+	},
+	
+	"permissions":[
+		"activeTab",
+		"tabs",
+		"background",
+		"http://localhost/ChromeExtension/",
+		"https://ajax.googleapis.com/"
+	]
+
+}
