@@ -28,9 +28,9 @@
 									para1.textContent= array[2];
 									div.appendChild(para1);
 									var para2= document.createElement('p');
-									para2.id= 'content';
-									para2.addClass='content';
-									para2.textContent= "Posted By: "+ array[0] + array[3] + " ago ";
+									para2.id= 'userDetails';
+									para2.addClass='userDetails';
+									para2.textContent= "Posted By: "+ array[0] + " , "+ array[3] + " ago ";
 									div.appendChild(para2);
 								body.appendChild(div);
 							}

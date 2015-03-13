@@ -24,6 +24,9 @@
 			}
 			$places_1[1]= $row['title'];
 			$places_1[2]= $row['content'];
+			$var='/<[^<>@]*>|\&nbsp;/';
+			$replace= ' ';
+			$places_1[2]= preg_replace($var,$replace,$places_1[2]);
 			$places_1[3]= $row['created_at'];
 			$places_1[3]= prodate($places_1[3]);
 			$places[$j]= implode('~',$places_1);

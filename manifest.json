@@ -23,7 +23,6 @@
 		"http://localhost/ChromeExtension/",
 		"webRequest",
 		"*://students.iitm.ac.in/*",
-		"https://ajax.googleapis.com/"
+		"https://ajax.googleapis.com/",
 	]
-
 }
