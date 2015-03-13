@@ -8,9 +8,9 @@
 	"version": "1.0",
 	
 	"icons":{
-		"128":"icon.png"
+		"128":"images/icon.png"
 	},
-	"background": { "scripts": ["popup.js"] },
+	"background": { "scripts": ["js/popup.js"] },
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "Click here!"
@@ -21,6 +21,8 @@
 		"tabs",
 		"background",
 		"http://localhost/ChromeExtension/",
+		"webRequest",
+		"*://students.iitm.ac.in/*",
 		"https://ajax.googleapis.com/"
 	]
 
