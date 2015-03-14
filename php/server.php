@@ -29,6 +29,7 @@
 			$places_1[2]= preg_replace($var,$replace,$places_1[2]);
 			$places_1[3]= $row['created_at'];
 			$places_1[3]= prodate($places_1[3]);
+			$places_1[4]= $row['anonymous'];
 			$places[$j]= implode('~',$places_1);
 			$j++;
 		}

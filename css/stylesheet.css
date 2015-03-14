@@ -1,0 +1,17 @@
+body {
+}
+.posts{
+	background-color: linen;
+	border-bottom: -3px;
+	border-radius: 5px;
+}
+.title{
+	font-size:25px;
+	margin-bottom: -20px;
+}
+.content{
+	font-size:20px;
+}
+.userDetails{
+	font-size:15px;
+}
