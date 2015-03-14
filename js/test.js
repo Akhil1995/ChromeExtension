@@ -39,8 +39,20 @@
 								insertdivs(arr,min,arr.length,divlarge);
 								div.style.display= 'none';
 							}
-							},false);					
-							for(i=0;i<max;i++)
+							},false);
+							document.addEventListener('click', function(e) {
+									e = e || window.event;
+									var target = e.target || e.srcElement;
+									var target0= target.nextElementSibling;
+									var target_0= target0.id;
+									target_0= '#'+ target_0;
+									var target1= target0.nextElementSibling;
+									var target_1= target1.id;
+									target_1= '#'+ target_1;
+									$(target_0).slideDown();
+									$(target_1).slideDown();
+								}, false);
+							/*for(i=0;i<max;i++)
 								{
 									
 									var uid= "posts"+i;
@@ -55,7 +67,7 @@
 										var para1= document.getElementById(y);
 										para1.style.display='block';
 									},false);
-								}	
+								}*/	
 						}
 				}
 			xmlhttp.open("GET",("http://localhost/ChromeExtension/php/server.php?q=1"),true);
